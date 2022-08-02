@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="assets/241768842_141192498196706_6260149831176140012_n.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./css/estilo.css">
     <title>Deli'Yi | Empanadas Artesanales</title>
@@ -23,10 +24,11 @@
         </ul>
     </nav>
 <header>
-    <h1 class="title-home">Empanadas Auténticas</h1>
-    <h2 class="subtítulo">Bienvenidos</h2>
+    <h1 class="title-home" data-aos="fade-down">Empanadas Auténticas</h1>
+    <h2 class="subtítulo" data-aos="fade-down">Bienvenidos</h2>
     <div class="grid_index">
-        <div id="img-port">
+        <div id="img-port" data-aos="fade-right" data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
             <img class="img-portada" src="./assets/289372811_329764396006181_5467466630182755018_n.jpg" alt="IMG DEMO" width="200px">
         </div>
         <section>
@@ -47,8 +49,8 @@
     <!--texto que acompañe al iframe-->
             <p id="texto-iframe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptas molestiae dolorum perspiciatis nulla aliquam suscipit, tenetur, explicabo autem aut a quia reiciendis rerum doloribus fuga accusamus maxime omnis. Molestiae.</p>
         </div>
-        <div class="box-model1">
-            <iframe class="video" width="400" height="300" src="https://www.youtube.com/embed/NF6fPxoSMY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="box-model1" >
+            <iframe class="video" data-aos="zoom-in-left" width="400" height="300" src="https://www.youtube.com/embed/NF6fPxoSMY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
 </main>
@@ -66,5 +68,9 @@
         <h4>Desarrollado por Gisela Calderón</h4>
     </div>
 </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

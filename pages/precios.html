@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="../assets/241768842_141192498196706_6260149831176140012_n.jpg" type="image/x-icon">
     <link rel="stylesheet" href="../css/estilo.css">
     <title>Deli'Yi | Precios</title>
@@ -24,13 +25,18 @@
     </nav>
 
     <header id="id.precios">
-        <h3 class="title-precios">Precios y promos</h3>
+        <h3 class="title-precios" data-aos="fade-down">Precios y promos</h3>
     </header>
 
     <main id="main-precios">
-        <h3 class="h3-precios">Promo doble</h3>
-        <h4 class="promo">Pizza doble muzza + 6 criollas y 6 árabes</h4>
-        <section class="grid_precios">
+        <h3 class="h3-precios" data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">Promo doble</h3>
+        <h4 class="promo" data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">Pizza doble muzza + 6 criollas y 6 árabes</h4>
+        <section class="grid_precios" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
             <ol>
                 <h3 class="h3-precios1">Top 950$</h3>
                 <li>Criollas</li>
@@ -103,5 +109,9 @@
     <h4>Ayuda</h4>
     <h4>Desarrollado por Gisela Calderón</h4>
 </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

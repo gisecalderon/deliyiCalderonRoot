@@ -173,7 +173,7 @@ td{
 }
 
 #id-nosotros{
-    width: 100%;
+    width: 100vw;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -189,12 +189,13 @@ td{
     background-color: rgba(27, 27, 27, 0.656);
 }
 .text-nosotros{
-    width: 50%;
+    width: 100%;
     color: white;
     text-align: justify;
 }
 .img-nosotros{
-
+    width: 500px;
+    height: auto;
     border-radius: 25px; 
 }
 #id-precios{
@@ -292,7 +293,7 @@ form{
     letter-spacing: 2px;
     padding:  20px;
     background-color: rgba(27, 27, 27, 0.656);
-    width: 100%;
+    width: 100vw;
 }
 /*contacto*/
 .formulario{
@@ -345,7 +346,7 @@ footer {
     grid-row-gap: 10px;
 }
 
-@media (max-width:576px){
+@media only screen and (max-width:576px){
 nav{
     display: flex;
     justify-content: center;
@@ -374,7 +375,8 @@ body {
     grid-template-rows: repeat(2, 1fr);
 }
 .video{
-    width: 300;
+    width: 250px;
+    height: auto;
 }
 .allado{
     flex-direction: column;
@@ -409,4 +411,11 @@ body {
 .title-contacto{
     font-size: 20px;
     line-height: 100%;
+}
+.img-nosotros{
+    width: 300px;
+    height: auto;
+}
+.text-nosotros{
+    width: 90%;
 }
