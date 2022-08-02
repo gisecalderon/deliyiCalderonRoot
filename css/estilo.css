@@ -1,0 +1,412 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+@font-face{
+    font-family:bebasNeue;
+    src: url("../assets/Fonts/Bebas_Neue/BebasNeue-Regular.ttf");
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+nav{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(27, 27, 27);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+nav ul{list-style-type: none;}
+nav ul li{
+    display: inline-block;}
+nav ul li a{
+    padding: 30px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: block;}
+
+
+.title-home{
+    font-family: 'bebasNeue', sans-serif;
+    font-size: 70px;
+    color: white;
+    text-align: center;
+    background-color: rgba(27, 27, 27, 0.656);
+    width: 100%;
+}
+.subtítulo{
+    font-family: 'bebasNeue', sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    text-align: center;
+    color: white;
+    line-height: 20%;
+    letter-spacing: 2px;
+    padding-bottom:  20px;
+    background-color: rgba(27, 27, 27, 0.656);
+    width: 100%;
+}
+body {
+    width: 100%;
+    height: 800px;
+    background-color: rgb(27, 27, 27);
+    background-image: url(../assets/backgr/receta-de-empanadas-saltenas-1900Wx500H.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+#img-port{
+    max-width: 100%;
+    display: flex;
+
+}
+.img-portada{
+    width: 600px;
+    margin: auto;
+    display: block;
+}
+
+.grid_index{
+    margin: 10px;
+    padding: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    grid-column-gap: 15px;
+}
+
+.tittle-top{
+    font-family: 'bebasNeue', sans-serif;
+    font-size: 20px;
+    margin-left: 40px;
+    padding-top: 20px;
+    text-align: center;
+    background: rgba(27, 27, 27, 0.656);
+    color: white;
+}
+
+/*estilo de lista*/
+.top-empanadas{
+    list-style-type: decimal-leading-zero;
+    list-style-position: inside;
+    margin-left: 40px;
+    padding-top: 20px;
+    text-align: center;
+    background: rgba(27, 27, 27, 0.656);
+    color: white;
+}
+#texto-iframe{
+    text-align: justify;
+    color: white;
+}
+.allado{
+    display: flex;
+    justify-content:space-around;
+}
+.box-model{
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    margin: 10px;
+    padding: 10px;
+    border: solid 2px;
+    background: rgba(27, 27, 27, 0.656);
+}
+.box-model1{
+    width: 450px;
+    height: 350px;
+    overflow: hidden;
+    margin: 20px;
+    padding: 15px;
+    border: solid 2px;
+    background: rgba(27, 27, 27, 0.656);
+}
+.title-tabla{
+    font-family: 'bebasNeue', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    line-height: 20%;
+    letter-spacing: 2px;
+    padding:  20px;
+    background-color: rgba(27, 27, 27, 0.656);
+    width: 100%;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px;
+    margin-bottom: 90px;
+}
+th, td {
+    border: solid 1px;
+    padding: 5px;
+}
+th{
+    background-color: black; 
+    color:white;
+    text-align: left;
+}
+td{
+    background-color: rgba(27, 27, 27, 0.656);
+    color: white;
+}
+.listita-ingredientes{
+    list-style-position: inside;
+    text-decoration: none;
+}
+
+#id-nosotros{
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.title-nosotros{
+    font-family: 'bebasNeue', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    line-height: 20%;
+    letter-spacing: 2px;
+    padding:  20px;
+    background-color: rgba(27, 27, 27, 0.656);
+}
+.text-nosotros{
+    width: 50%;
+    color: white;
+    text-align: justify;
+}
+.img-nosotros{
+
+    border-radius: 25px; 
+}
+#id-precios{
+    width: 100%;
+    margin: 10px 20px;
+}
+.title-precios{
+    font-family: 'bebasNeue', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    line-height: 20%;
+    letter-spacing: 2px;
+    padding:  20px;
+    background-color: rgba(27, 27, 27, 0.656);
+    width: 100%;
+}
+#main-precios{
+        width: 100%;
+        margin: 10px 20px;
+}
+.h3-precios{
+    font-family: 'bebasNeue', sans-serif;
+    font-size: 25px;
+    text-align:center;
+    color: white;
+    line-height: 20%;
+    letter-spacing: 2px;
+    padding:  20px;
+    background-color: rgba(27, 27, 27, 0.656);
+    width: 100%;
+}
+.h3-precios1{
+    font-family: 'bebasNeue', sans-serif;
+    font-size: 20px;
+    text-align:center;
+    color: white;
+    line-height: 20%;
+    letter-spacing: 2px;
+    padding:  20px;
+    background-color: rgba(27, 27, 27, 0.656);
+    width: 100%;
+}
+.promo{
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    line-height: 20%;
+    padding:  10px;
+    background-color: rgba(27, 27, 27, 0.656);
+    width: 100%;
+}
+main section ol li{
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    line-height: 20%;
+    padding:  10px;
+    background-color: rgba(27, 27, 27, 0.656);
+    width: 100%;
+}
+.grid_precios{    
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin:10px ;
+    padding: 5px;
+    border: 5px;
+
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: (1, 1fr);
+    justify-items: center;
+}
+form{ 
+    width: 450px;
+    margin: auto;
+    background:rgba(27, 27, 27, 0.656);
+    padding: 10px;
+    border-radius:7px;
+    margin-bottom: 60px;
+}
+#header-contacto{
+    width: 100%;
+    margin: 10px 20px;
+}
+.title-contacto{
+    font-family: 'bebasNeue', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    line-height: 20%;
+    letter-spacing: 2px;
+    padding:  20px;
+    background-color: rgba(27, 27, 27, 0.656);
+    width: 100%;
+}
+/*contacto*/
+.formulario{
+    border: black solid 1px;
+    width: 100%;
+    padding: 15px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.consultas{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    line-height: 20%;
+    letter-spacing: 2px;
+    padding:  15px;
+    width: 100%;
+}
+.form_interno{
+    text-align: left;
+    color: white;
+    line-height: 100%;
+    letter-spacing: 2px;
+    padding:  10px 5px;
+    width: 100%;
+}
+option{
+    background:grey;
+    text-align: center;
+    color: white;
+    padding:  10px 5px;
+}
+button{
+    background:grey;
+    text-align: center;
+    color: white;
+    padding:  10px 5px;
+}
+footer { 
+    width: 100%;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    padding: 20px 20px;
+    font-size: 12px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1 fr);
+    justify-items: center;
+    grid-row-gap: 10px;
+}
+
+@media (max-width:576px){
+nav{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+body {
+    background-color: rgb(27, 27, 27);
+    background-image: url(../assets/backgr/receta-de-empanadas-saltenas-1900Wx500H.jpg);
+    background-size:cover;
+}
+
+.img-portada{
+    width: 300px;
+    margin: auto;
+    display: block;
+}
+.grid_index{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.video{
+    width: 300;
+}
+.allado{
+    flex-direction: column;
+}
+.grid_precios{
+    justify-content: center;
+
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: (5, 1fr);
+    justify-items: center;
+
+    padding: 5px;
+    border: 5px;
+    margin: 5px;
+}
+.promo{
+        font-size: 16px;
+        line-height: 100%;
+        padding: 15px;
+        width: 90%;
+}
+.title-home{
+    font-size: 50px;
+}
+.subtítulo{
+    font-size: 30px;
+}
+.title-tabla{
+    font-size: 20px;
+}
+.title-contacto{
+    font-size: 20px;
+    line-height: 100%;
+}
