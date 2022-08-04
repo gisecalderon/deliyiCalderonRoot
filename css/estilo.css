@@ -15,17 +15,33 @@ html{
     margin: 0px;
     border: 0px;
 }
+.navbar{
+    background-color: black;
+    position: sticky;
+    top: 0;
+    
+}
+.collapse .navbar-collapse{
+    display: flex;
+    justify-content: end;
+    text-align: end;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+
+}
+.navbar-expand-sm {
+    display: flex;
+    justify-content: end;
+    text-align: end;
+}
 nav{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: rgb(27, 27, 27);
     padding: 10px;
-    position: sticky;
-    top: 0;
 }
-nav ul{list-style-type: none;}
+
 nav ul li{
     display: inline-block;}
 nav ul li a{
@@ -297,10 +313,11 @@ form{
 }
 /*contacto*/
 .formulario{
+    max-width: 420px;
+    max-height: 1000px;
     border: black solid 1px;
-    width: 100%;
     padding: 15px;
-    margin: 10px;
+    margin: 5px;
     display: flex;
     flex-direction: column;
 }
@@ -309,7 +326,7 @@ form{
     text-align: center;
     color: white;
     line-height: 20%;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     padding:  15px;
     width: 100%;
 }
@@ -317,9 +334,13 @@ form{
     text-align: left;
     color: white;
     line-height: 100%;
-    letter-spacing: 2px;
-    padding:  10px 5px;
+    letter-spacing: 1px;
+    padding:  1px 1px;
     width: 100%;
+}
+.btn .btn-dark{
+    border: black solid 1px;
+
 }
 option{
     background:grey;
@@ -333,17 +354,27 @@ button{
     color: white;
     padding:  10px 5px;
 }
-footer { 
+.piedepag{
     width: 100%;
-    background-color: rgb(27, 27, 27);
+    background-color: black;
     color: white;
     padding: 20px 20px;
-    font-size: 12px;
 
     display: grid;
-    grid-template-columns: repeat(4, 1 fr);
-    justify-items: center;
-    grid-row-gap: 10px;
+    grid-template-columns: repeat(2, 1 fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: left;  
+}
+.pie-de-pagina { 
+    font-size: 16px;
+}
+.pie-de-pagina1{
+    font-size: 20px;
+}
+
+i{
+    font-size: 1.5rem;
+    color: white;
 }
 
 @media only screen and (max-width:576px){
@@ -419,3 +450,12 @@ body {
 .text-nosotros{
     width: 90%;
 }
+
+.formulario{
+    max-width: 300px;
+    max-height: auto;
+}
+.btn .btn-dark{
+max-width: 300px;
+max-height: auto;
+ }

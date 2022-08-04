@@ -6,79 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="../assets/241768842_141192498196706_6260149831176140012_n.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilo.css">
     <title>Deli'Yi | Contacto</title>
 </head>
 <body>
-    <nav>
-        <a href="../index.html">
-            <img src="../assets/logo/logoDliYi.jpg" alt="logo" width="75mp">
-        </a>
-        <ul> 
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../pages/productos.html">Productos</a></li>
-            <li><a href="../pages/precios.html">Precios</a></li>
-            <li><a href="../pages/nosotros.html">Nosotros</a></li>
-            <li><a href="#">Contactos</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container-fluid">
+            <a href="../index.html"> 
+            <img class="logo" src="../assets/logo/logo deliyi.png" alt="logo" width="75mp">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="opciones">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./precios.html">Precios</a></li>
+                    <li class="nav-item"><a class="nav-link" nav-link href="./nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" nav-link href="#">Contactos</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-
 <header id="header-contacto">
     <h3 class="title-contacto" data-aos="fade-down">No te guardes nada! Escribinos</h3>
 </header>
 <main>
-    <form action="procesar.php" name="Contacto" method="post">
-        <fieldset class="formulario">
-            <legend class="consultas">Consultas</legend>
-                <p>
-                    <label class="form_interno">Nombre:
-                        <input type="text" name="Nombre" placeholder="" required>
-                    </label>
-                </p>
-                <p>
-                    <label class="form_interno">Apellido:
-                        <input type="text" name="Apellido" placeholder="" required>
-                </p>
-                <h4 class="form_interno">Sexo</h4>
-                <select name="Sexo">
-                    <option value="Hombre">Hombre</option>
-                    <option value="Mujer">Mujer</option>
-                    <option value="Otro">Otro</option>
-                </select>
-                <p>
-                    <label class="form_interno">E-mail:
-                    <input type="email" name="Correo" placeholder="" required>
-                    </label>
-                </p>
-                <p>
-                    <label class="form_interno">Contraseña :
-                    <input type="password" name="Contraseña" placeholder="" required>
-                    </label>
-                </p>
-                <h4 class="form_interno">Dejanos tu comentario</h4>
-                <textarea name="comentarios" id="" cols="30" rows="10"></textarea>
-                <h4 class="form_interno">Acepto terminos y condiciones?</h4>
-                <p>
-                    <label class="form_interno" for="Terminos y condiciones">Acepto</label>
-                        <input type="checkbox" name="terminos y condiciones" value="1">
-                </p>
+    <div class="container">
+            <form class="row" action="procesar.php" name="Contacto" method="post">
+                <fieldset class="formulario container-fluid">
+                    <legend class="consultas">Consultas</legend>
+                        <p>
+                            <label class="form_interno">Nombre:
+                                <input type="text" name="Nombre" placeholder="" required>
+                            </label>
+                        </p>
+                        <p>
+                            <label class="form_interno">Apellido:
+                                <input type="text" name="Apellido" placeholder="" required>
+                        </p>
+                        <h4 class="form_interno">Sexo</h4>
+                        <select name="Sexo">
+                            <option value="Hombre">Hombre</option>
+                            <option value="Mujer">Mujer</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                        <p>
+                            <label class="form_interno">E-mail:
+                                <input type="email" name="Correo" placeholder="" required>
+                            </label>
+                        </p>
+                        <p>
+                            <label class="form_interno">Contraseña :
+                                <input type="password" name="Contraseña" placeholder="" required>
+                            </label>
+                        </p>
+                        <h4 class="form_interno">Dejanos tu comentario</h4>
+                        <textarea name="comentarios" id="" cols="30" rows="10"></textarea>
+                        <h4 class="form_interno">Acepto terminos y condiciones?</h4>
+                        <p>
+                            <label class="form_interno" for="Terminos y condiciones">Acepto</label>
+                                <input type="checkbox" name="terminos y condiciones" value="1">
+                        </p>
             </fieldset>
             <!--botones-->
-            <button type="submit">Enviar</button>
-            <button type="reset">Borrar formulario</button>
+            <button type="submit" class="btn btn-dark">Enviar</button>
+
+            <button type="reset" class="btn btn-dark">Borrar formulario</button>
         </form>
+        </div>
+    </div>
+    
 </main>
-<footer>
-    <h3>Seguinos en nuestras redes</h3>
-    <article class="contact">
-        <a href="https://www.instagram.com/deli.yi_empanadas_artesanales/" target="_blank">Instagram</a>
-            <img src="../assets/logo/icons8-instagram-32.png" alt="Logo Instagram" width="25mp">
-        <a href="https://www.facebook.com/DeliYi-107474491568507" target="_blank">Facebook</a>
-            <img src="../assets/logo/icons8-facebook-32.png" alt="Logo Facebook" width="25mp">
-    </article>
-    <h4>Ayuda</h4>
-    <h4>Desarrollado por Gisela Calderón</h4>
+<footer class="piedepag">
+    <div>
+        <h3 class="pie-de-pagina1">Seguinos en nuestras redes</h3>
+        <article>
+            <a href="https://www.instagram.com/deli.yi_empanadas_artesanales/" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/DeliYi-107474491568507" target="_blank"><i class="bi bi-facebook"></i></a>
+        </article>
+        <h4 class="pie-de-pagina">Ayuda</h4>
+        <h4 class="pie-de-pagina">Desarrollado por Gisela Calderón</h4>
+    </div>
 </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
