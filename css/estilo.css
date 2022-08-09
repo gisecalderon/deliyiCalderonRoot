@@ -19,12 +19,28 @@ html{
     background-color: black;
     position: sticky;
     top: 0;
-    
+
 }
+.navbar ul li::before{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: gold;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+.navbar ul li:hover ::before{
+    width: 100%;
+
+}
+
 .collapse .navbar-collapse{
     display: flex;
-    justify-content: end;
-    text-align: end;
+    justify-content: space-between;
+    text-align: right;
+    
 }
 .navbar-dark .navbar-nav .nav-link {
     color: white;
@@ -39,25 +55,24 @@ nav{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+
     padding: 10px;
 }
 
-nav ul li{
-    display: inline-block;}
-nav ul li a{
+nav ul li a{    
+    display: inline-block;
     padding: 30px 20px;
     text-decoration: none;
     color: white;
     font-size: 16px;
-    display: block;}
-
+    display: block;
+}
 
 .title-home{
     font-family: 'bebasNeue', sans-serif;
     font-size: 70px;
     color: white;
     text-align: center;
-    background-color: rgba(27, 27, 27, 0.656);
     width: 100%;
 }
 .subtítulo{
@@ -68,15 +83,14 @@ nav ul li a{
     color: white;
     line-height: 20%;
     letter-spacing: 2px;
-    padding-bottom:  20px;
-    background-color: rgba(27, 27, 27, 0.656);
+    padding-bottom: 20px;
     width: 100%;
 }
 body {
     width: 100%;
     height: 800px;
     background-color: rgb(27, 27, 27);
-    background-image: url(../assets/backgr/receta-de-empanadas-saltenas-1900Wx500H.jpg);
+    background-image: url(../assets/backgr/backpagina.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -85,14 +99,12 @@ body {
 #img-port{
     max-width: 100%;
     display: flex;
-
 }
 .img-portada{
-    width: 600px;
+    width: 300px;
     margin: auto;
     display: block;
 }
-
 .grid_index{
     margin: 10px;
     padding: 20px;
@@ -109,23 +121,22 @@ body {
 
 .tittle-top{
     font-family: 'bebasNeue', sans-serif;
-    font-size: 20px;
-    margin-left: 40px;
-    padding-top: 20px;
+    font-size: 30px;
+    margin-left: auto;
+    padding-top: 50px;
     text-align: center;
-    background: rgba(27, 27, 27, 0.656);
     color: white;
 }
 
 /*estilo de lista*/
 .top-empanadas{
     list-style-type: decimal-leading-zero;
-    list-style-position: inside;
-    margin-left: 40px;
+    font-size: 20px;
+    list-style-position: outside;
     padding-top: 20px;
     text-align: center;
-    background: rgba(27, 27, 27, 0.656);
     color: white;
+    list-style: none;
 }
 #texto-iframe{
     text-align: justify;
@@ -139,10 +150,11 @@ body {
     width: 300px;
     height: 200px;
     overflow: hidden;
-    margin: 10px;
-    padding: 10px;
-    border: solid 2px;
-    background: rgba(27, 27, 27, 0.656);
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding-top: 1px;
+    font-family: var(--bs-body-font-family);
+    line-height: var(--bs-body-line-height);
 }
 .box-model1{
     width: 450px;
@@ -150,8 +162,6 @@ body {
     overflow: hidden;
     margin: 20px;
     padding: 15px;
-    border: solid 2px;
-    background: rgba(27, 27, 27, 0.656);
 }
 .title-tabla{
     font-family: 'bebasNeue', sans-serif;
@@ -161,18 +171,17 @@ body {
     line-height: 20%;
     letter-spacing: 2px;
     padding:  20px;
-    background-color: rgba(27, 27, 27, 0.656);
     width: 100%;
 }
 table{
-    width: 100%;
+    width: 100vw;
     border-collapse: collapse;
-    margin: 15px;
     margin-bottom: 90px;
 }
 th, td {
     border: solid 1px;
     padding: 5px;
+    text-align: center;
 }
 th{
     background-color: black; 
@@ -180,7 +189,6 @@ th{
     text-align: left;
 }
 td{
-    background-color: rgba(27, 27, 27, 0.656);
     color: white;
 }
 .listita-ingredientes{
@@ -193,6 +201,7 @@ td{
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
 }
 .title-nosotros{
     font-family: 'bebasNeue', sans-serif;
@@ -202,7 +211,6 @@ td{
     line-height: 20%;
     letter-spacing: 2px;
     padding:  20px;
-    background-color: rgba(27, 27, 27, 0.656);
 }
 .text-nosotros{
     width: 100%;
@@ -226,12 +234,10 @@ td{
     line-height: 20%;
     letter-spacing: 2px;
     padding:  20px;
-    background-color: rgba(27, 27, 27, 0.656);
     width: 100%;
 }
 #main-precios{
         width: 100%;
-        margin: 10px 20px;
 }
 .h3-precios{
     font-family: 'bebasNeue', sans-serif;
@@ -241,7 +247,6 @@ td{
     line-height: 20%;
     letter-spacing: 2px;
     padding:  20px;
-    background-color: rgba(27, 27, 27, 0.656);
     width: 100%;
 }
 .h3-precios1{
@@ -252,7 +257,6 @@ td{
     line-height: 20%;
     letter-spacing: 2px;
     padding:  20px;
-    background-color: rgba(27, 27, 27, 0.656);
     width: 100%;
 }
 .promo{
@@ -261,7 +265,6 @@ td{
     color: white;
     line-height: 20%;
     padding:  10px;
-    background-color: rgba(27, 27, 27, 0.656);
     width: 100%;
 }
 main section ol li{
@@ -270,8 +273,8 @@ main section ol li{
     color: white;
     line-height: 20%;
     padding:  10px;
-    background-color: rgba(27, 27, 27, 0.656);
     width: 100%;
+    list-style: none;
 }
 .grid_precios{    
     text-decoration: none;
@@ -285,13 +288,11 @@ main section ol li{
 
     display:grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: (1, 1fr);
     justify-items: center;
 }
 form{ 
     width: 450px;
     margin: auto;
-    background:rgba(27, 27, 27, 0.656);
     padding: 10px;
     border-radius:7px;
     margin-bottom: 60px;
@@ -308,7 +309,6 @@ form{
     line-height: 20%;
     letter-spacing: 2px;
     padding:  20px;
-    background-color: rgba(27, 27, 27, 0.656);
     width: 100vw;
 }
 /*contacto*/
@@ -362,7 +362,6 @@ button{
 
     display: grid;
     grid-template-columns: repeat(2, 1 fr);
-    grid-template-rows: repeat(2, 1fr);
     justify-items: left;  
 }
 .pie-de-pagina { 
@@ -381,13 +380,12 @@ i{
 nav{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;  
 }
 
 body {
     background-color: rgb(27, 27, 27);
-    background-image: url(../assets/backgr/receta-de-empanadas-saltenas-1900Wx500H.jpg);
+    background-image: url(../assets/backgr/backpagina.png);
     background-size:cover;
 }
 
@@ -459,3 +457,20 @@ body {
 max-width: 300px;
 max-height: auto;
 }
+.box-model {
+    width: 275px;
+    height: auto;
+}
+.box-model1 {
+    width: 275px;
+    height: auto;
+    margin: 18px;
+    padding: 10px;
+}
+th, td {
+    padding: 0px;
+}
+.collapse .navbar-collapse{
+    display: flex;
+    justify-content: end;
+    text-align: end;}
