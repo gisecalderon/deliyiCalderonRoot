@@ -10,6 +10,7 @@ box-sizing: border-box;}
 
 html{
     font-family: 'Montserrat', sans-serif;
+    color: white;
     font-size: 18px;
     padding: 0px;
     margin: 0px;
@@ -67,7 +68,11 @@ nav ul li a{
     font-size: 16px;
     display: block;
 }
-
+.d-block w-100{
+    width: 500px;
+    height: auto;
+    align-items: center;
+}
 .title-home{
     font-family: 'bebasNeue', sans-serif;
     font-size: 70px;
@@ -471,7 +476,9 @@ max-height: auto;
 th, td {
     padding: 0px;
 }
-.collapse .navbar-collapse{
+.collapse .navbar-collapse {
     display: flex;
     justify-content: end;
-    text-align: end;}
+    text-align: end;
+}
+}
