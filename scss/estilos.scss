@@ -76,17 +76,16 @@ nav{
         }
     }
 }
-.d-block w-100{
-    width: 500px;
-    height: auto;
-    align-items: center;
-}
 .title-home{
     font-family: 'bebasNeue', sans-serif;
     font-size: 70px;
     color: $color-font;
     text-align: center;
     width: 100%;
+}
+.carousel-item{
+    width: 700px;
+    height: auto;
 }
 .subtítulo{
     @extend .title-tabla;
@@ -217,13 +216,14 @@ td{
     padding: $pad;
 }
 .text-nosotros{
-    width: 100%;
     color: $color-font;
     text-align: justify;
+    font-size: 25px;
+    margin: 50px;
 }
 .img-nosotros{
-    width: 500px;
-    height: auto;
+    width: 400px;
+    height: 250px;
     border-radius: 25px; 
 }
 #id-precios{
@@ -341,13 +341,10 @@ option{
     background: map-get($estilos, col );
     text-align: center;
     color: white;
-    padding:  10px 5px;
+    padding:  map-get($estilos, col) 5px;
 }
 button{
-    background: map-get($estilos, col );
-    text-align: center;
-    color: white;
-    padding: map-get($estilos, pd ) 5px;
+    @extend option
 }
 .piedepag{
     width: 100%;
@@ -423,7 +420,7 @@ i{
         font-size: 50px;
     }
     .subtítulo{
-        font-size: 30px;
+        font-size: 40px;
     }
     .title-tabla{
         font-size: 20px;
@@ -431,6 +428,12 @@ i{
     .title-contacto{
         font-size: 20px;
         line-height: 100%;
+    }
+    #id-nosotros{
+        width: 100%;
+
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
     }
     .img-nosotros{
         width: 300px;
@@ -464,4 +467,4 @@ i{
         display: flex;
         justify-content: end;
         text-align: end;}
-    }
+}
