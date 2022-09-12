@@ -46,7 +46,8 @@ html{
 }
 .collapse .navbar-collapse{
     display: flex;
-    justify-content: space-between;
+    flex-grow: initial;
+    justify-content: flex end;
     text-align: right;
 }
 .navbar-dark .navbar-nav .nav-link {
@@ -82,10 +83,6 @@ nav{
     color: $color-font;
     text-align: center;
     width: 100%;
-}
-.carousel-item{
-    width: 700px;
-    height: auto;
 }
 .subtítulo{
     @extend .title-tabla;
@@ -201,8 +198,8 @@ td{
     text-decoration: none;
 }
 #id-nosotros{
-    width: 100vw;
-
+    width: 100%;
+    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -215,11 +212,18 @@ td{
     letter-spacing: 2px;
     padding: $pad;
 }
+.article-nosotros{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .text-nosotros{
     color: $color-font;
     text-align: justify;
     font-size: 25px;
     margin: 50px;
+    display: flex;
+
 }
 .img-nosotros{
     width: 400px;
@@ -351,6 +355,7 @@ button{
     background-color: $colorb;
     color: white;
     padding: $pad;
+    bottom: 0;
 
     display: grid;
     grid-template-columns: repeat(2, 1 fr);
@@ -433,7 +438,7 @@ i{
         width: 100%;
 
         display: grid;
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
     .img-nosotros{
         width: 300px;
