@@ -36,10 +36,10 @@ function agregar_a_carrito(e){
     
     carrito.push(producto);
 
-    localStorage.setItem("nombre","precio");
+    localStorage.setItem("h5","span");
 
-    let nombre_primero = localStorage.getItem("nombre");
-    let precio_primero = localStorage.getItem("precio");
+    let nombre_primero = localStorage.getItem("h5");
+    let precio_primero = localStorage.getItem("span");
     
     mostrar_carrito(producto);
 
