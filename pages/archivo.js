@@ -35,7 +35,11 @@ function agregar_a_carrito(e){
     }
     
     carrito.push(producto);
-    /*guardar en local storga formato json*/
+
+    localStorage.setItem("nombre","precio");
+
+    let nombre_primero = localStorage.getItem("nombre");
+    let precio_primero = localStorage.getItem("precio");
     
     mostrar_carrito(producto);
 
