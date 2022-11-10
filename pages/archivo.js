@@ -7,19 +7,21 @@ for(let boton of btn_compra){
     boton.addEventListener("click" , agregar_a_carrito);
 }
 
+
+
 function agregar_a_carrito(e){
 
-    let hijo = e.target;
-    let padre = hijo.parentNode;
-    let abuelo = padre.parentNode;
+    let menor = e.target;
+    let medio = menor.parentNode;
+    let mayor = medio.parentNode;
 
-    console.log(hijo);
-    console.log(padre);
-    console.log(abuelo);
+    console.log(menor);
+    console.log(medio);
+    console.log(mayor);
 
-    let nombre_producto = padre.querySelector("h5").textContent;
-    let precio_producto = padre.querySelector("span").textContent;
-    let imagen_producto = abuelo.querySelector("img").src;
+    let nombre_producto = medio.querySelector("h5").textContent;
+    let precio_producto = medio.querySelector("span").textContent;
+    let imagen_producto = mayor.querySelector("img").src;
 
     console.log (nombre_producto);
     console.log (precio_producto);
@@ -33,17 +35,20 @@ function agregar_a_carrito(e){
         cantidad: 1
 
     }
-    
+
+
+
     carrito.push(producto);
 
-    localStorage.setItem("h5","span");
+    localStorage.setItem("producto", JSON. stringify(producto));
 
     let nombre_primero = localStorage.getItem("h5");
     let precio_primero = localStorage.getItem("span");
     
     mostrar_carrito(producto);
+    };
 
-    }
+    let nombre = "Criolla";
 function mostrar_carrito (producto){
     let fila = document.createElement("tr");
     fila.innerHTML = `<td><img src="${producto.img}"></td>
@@ -66,9 +71,9 @@ function mostrar_carrito (producto){
 
     function borrar_producto(e){
 
-        let abuelo = e.target.parentNode.parentNode;
+        let mayor = e.target.parentNode.parentNode;
 
-        abuelo.remove();
+        mayor.remove();
     }
 
     let btn_carrito = document.getElementById("mostrar_carrito");
