@@ -7,8 +7,6 @@ for(let boton of btn_compra){
     boton.addEventListener("click" , agregar_a_carrito);
 }
 
-
-
 function agregar_a_carrito(e){
 
     let menor = e.target;
@@ -35,8 +33,6 @@ function agregar_a_carrito(e){
         cantidad: 1
 
     }
-
-
 
     carrito.push(producto);
 
